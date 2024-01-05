@@ -1,0 +1,579 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="css/submenu.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style1.css" type="text/css">
+<title> Student Result </title>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" style="height:10px;color:#fff;font-size:25px;text-align:center;font-family:raleway;" href="index.php" class="pull-left"><img src="img/test.png" class="img-circle img-logo" id="img_logo"/><span style="display:inline-block;font-size:15px;"><abbr title="Result Processing Unit">R.P.</abbr> UNIT, <abbr title="Zakir Hussain College of Engineering and Technology">Z.H.C.E.T.</abbr></a></span>
+    </div>
+	 <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right" style="margin-top:-10px;">
+	<div class="navbar-form navbar-right" style="color:#fff">
+	        <button type="button" class="btn btn-default" style="height:25px;width:50px;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user" style="margin-bottom:8px"></span></button>&nbsp;&nbsp;
+		  </div>
+	<hr style="border-color:rgba(0,0,0,0);">
+      <li class="active"><a href="index.php">Home</a></li>
+	   <!--<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Polytechnics
+		<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<li><a href="pindex.php">University Poly.</a></li>
+			<li><a href="w_pindex.php">Women's Poly.</a></li>
+		</ul>
+		 </li>-->
+		 	 
+	   
+	   <!--<li class="dropdown"> <a  href="tlogin.php">Faculty Login</a></li>-->
+	 
+	  	  		  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teachers Section
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-header" style="font-weight:bold;color:#000;">
+				<li><a href="tlogin.php?p=mtech">Teacher Login</a></li>
+						
+				  <li class="divider"></li>
+		 </ul>
+			  		  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Student's Section
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+		<li class="divider"></li>
+		<li><a href="seat_plan.php">Download your Exam Seating Plan</a></li>
+		<li class="divider"></li>
+		
+		<li><a href="reg_record_odd.php">Download your Odd Semester Registration Card</a></li>
+		<li class="divider"></li>
+		<li><a href="reg_record_even.php">Download your Even Semester Registration Card</a></li>
+		<li class="divider"></li>
+		
+		
+
+		<!--<li><a href="eform.php">Course Registration</a></li>-->
+		<li class="dropdown-header" style="font-weight:bold;color:#000;">Course Registration</li>
+		<!--li><a href="crs_reg_form.php?prog=btech">Course Registration</a></li-->
+		
+		
+		<!--ul class="dropdown-menu"-->
+			<!--li><a href="crs_reg_form.php?prog=btech">B.Tech</a></li>
+			<li><a href="crs_reg_form.php?prog=be">B.E.</a></li>
+			<li><a href="crs_reg_form_MTECH.php?prog=mtech">M.Tech.</a></li-->
+			
+			<li><a href="crs_reg_form_btech.php">B.Tech/B.Arch.</a></li>
+			<li><a href="crs_reg_form_be.php">B.E.</a></li>
+			<li><a href="crs_reg_form_mtech.php">M.Tech./M.Arch./M.Plan</a></li>
+			
+		<!--/ul-->
+		
+		<!--<li class="divider"></li>			
+		<li><a href="eform.php">Down Load Your Hall Ticket</a></li>-->
+		
+		<li class="divider"></li>
+		 
+         <li class="dropdown-header" style="font-weight:bold;color:#000;">
+				STUDENT ATTENDANCE
+				</li>
+					
+						<li><a tabindex="-1" href="attendance.php?p=btech">B.Tech</a></li>
+						<li><a href="attendance.php?p=mtech">M.Tech</a></li>
+						<li><a href="attendance.php?p=be">B.E.</a></li>
+				
+																			
+		 <!--<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">Attendance</a>
+					<ul class="dropdown-menu">
+						<li><a tabindex="-1" href="#">Second level</a></li>
+						<li class="dropdown-submenu">
+							<a href="#">More..</a>
+								<ul class="dropdown-menu">
+								<li><a href="#">3rd level</a></li>
+								<li><a href="#">3rd level</a></li>
+								</ul>
+						</li>
+						<li><a href="#">Second level</a></li>
+						<li><a href="#">Second level</a></li>
+					</ul>
+		</li>
+          <li><a href="#">Attendance</a></li>
+	  -->
+		  <li class="divider"></li>
+		  		  <!--<li><a href="#" data-toggle="modal" data-target="#myModal">Profile </a></li> -->
+		  		  <li class="divider"></li>
+		  <!--<li><a href="../registration/">Course Registration</a></li>-->
+		  <!--li class="divider"></li-->
+		  <li class="dropdown-header" style="font-weight:bold;color:#000;">STUDENT RESULT</li>
+			<li><a href="st_result001.php?prog=btech">B.Tech</a></li>
+			<li><a href="st_result001.php?prog=mtech">M.Tech/M.Sc.</a></li>
+			<li><a href="st_result001.php?prog=be">B.E.</a></li>
+			<li><a href="cpiconvert.php">CPI to % Converter</a></li>
+			
+			
+		
+		
+        </ul>
+		      </li>
+	  <!-- start -->
+	  		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				
+        		<li><a href="../Forms/BLANK_registration_form.xlsx">Course Registration Form</a></li>
+				<li><a href="../Forms/transcript.doc">Interim Transcript Application Form</a></li>
+				<li><a href="../Forms/Dissertation_Form.pdf">M.Tech. Diss. Submission Form </a></li>
+				<li><a href="../Forms/Graduating_Exam_Notice_Form.pdf">Graduating Exam Form </a></li>
+				<li><a href="../Forms/Form_br_ change.pdf">Application Form Branch Change 2019 Batch </a></li>				
+							
+			</ul>
+		</li>
+		
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTICES
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+        
+				<li><a href="../NOTICES/Winter Semester.xlsx">Revised Academic Calendar, Winter Sem 2019-20</a></li>
+				<li><a href="../NOTICES/NOTICE FOR REG CLOSING DATE.docx">Registration Closing Notice </a></li>
+				<li><a href="../NOTICES/Notice_br_change.pdf">Branch Change Notice 2019 Batch</a></li>			
+							
+			</ul>
+		</li>
+		
+		      </li>
+	  <!-- End -->
+	  <li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Running Courses
+		<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<!--<li class="dropdown-submenu">-->
+		<a tabindex="-1" href="#">Odd Semester</a>
+		
+		<li class="dropdown-submenu">
+				
+					
+					<li class="dropdown-submenu">
+				<a href="#">B.Tech.</a>
+					<ul class="dropdown-menu">
+						
+					
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_All_Branches.pdf">All Branches</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_AR.pdf">Architecture</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_CH.pdf">Chemical Engg</a><br>																							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_CE.pdf">Civil Engg</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_CO.pdf">Computer Engg</a><br>																												
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_EE.pdf">Electrical Engg</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_EL.pdf">Electronics Engg</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_ME.pdf">Mechanical Engg</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_PK.pdf">Petrochemical Engg</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_AC.pdf">Applied Chemistry</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_AM.pdf">Applied Maths</a><br>																															
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BTECH/Complete_AP.pdf">Applied Physics</a><br>																														
+					</ul>
+		</li>
+		
+		<li class="dropdown-submenu">
+				<a href="#">M.Tech.</a>
+					<ul class="dropdown-menu">
+						
+					
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_All_Branches.pdf">All Branches</a><br>
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_AI.pdf">Artificial Intelligence</a><br>
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_BM.pdf">Biomedical Engg.</a><br>
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_CH.pdf">Chemical Engg.</a><br>							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_CE.pdf">Civil Engg.</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_CO.pdf">Computer Engg.</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_EE.pdf">Electrical Engg.</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_EL.pdf">Electronics Engg.</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_ME.pdf">Mechanical Engg.</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_PK.pdf">Petrochemical Engg.</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_AM.pdf">Applied Maths</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_MTECH/Complete_AP.pdf">Applied Physics</a><br>		
+				</ul>
+		</li>
+		
+		<li class="dropdown-submenu">
+				<a href="#">B.E.</a>
+					<ul class="dropdown-menu">
+						
+						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_All_Branches.pdf">All Branches</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_CE.pdf">Civil Engg</a><br>						
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_EE.pdf">Electrical Engg</a><br>							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_ME.pdf">Mechanical Engg</a><br>							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_AC.pdf">Applied Chemistry</a><br>							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_AM.pdf">Applied Maths</a><br>							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_AP.pdf">Applied Physics</a><br>							
+							<a hhref="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_CO.pdf">Computer Engg</a><br>							
+							<a href="../1Uploads/odd/Course_Lists/Course_Lists_BE/Complete_EL.pdf">Electronics Engg</a><br>						
+					</ul>
+		</li>
+		
+					
+		<a tabindex="-1" href="#">Even Semester</a>
+		
+		<li class="dropdown-submenu">
+				
+				
+					
+					<li class="dropdown-submenu">
+				<a href="#">B.Tech.</a>
+					<ul class="dropdown-menu">
+						
+					
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_All_Branches.pdf">All Branches</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_AR.pdf">Architecture</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_CH.pdf">Chemical Engg</a><br>																							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_CE.pdf">Civil Engg</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_CO.pdf">Computer Engg</a><br>																												
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_EE.pdf">Electrical Engg</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_EL.pdf">Electronics Engg</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_ME.pdf">Mechanical Engg</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_PK.pdf">Petrochemical Engg</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_AC.pdf">Applied Chemistry</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_AM.pdf">Applied Maths</a><br>																															
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BTECH/Complete_AP.pdf">Applied Physics</a><br>																														
+					</ul>
+		</li>
+		
+		<li class="dropdown-submenu">
+				<a href="#">M.Tech.</a>
+					<ul class="dropdown-menu">
+						
+						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_All_Branches.pdf">All Branches</a><br>	
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECHComplete_AI.pdf">Artificial Intelligence</a><br>
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_BM.pdf">Biomedical Engg.</a><br>
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_CH.pdf">Chemical Engg.</a><br>							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_CE.pdf">Civil Engg.</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_CO.pdf">Computer Engg.</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_EE.pdf">Electrical Engg.</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_EL.pdf">Electronics Engg.</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_ME.pdf">Mechanical Engg.</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_PK.pdf">Petrochemical Engg.</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_AM.pdf">Applied Maths</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_MTECH/Complete_AP.pdf">Applied Physics</a><br>		
+				</ul>
+		</li>
+		
+		<li class="dropdown-submenu">
+				<a href="#">B.E.</a>
+					<ul class="dropdown-menu">
+						
+						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_All_Branches.pdf">All Branches</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_CE.pdf">Civil Engg</a><br>						
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_EE.pdf">Electrical Engg</a><br>							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_ME.pdf">Mechanical Engg</a><br>							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_AC.pdf">Applied Chemistry</a><br>							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_AM.pdf">Applied Maths</a><br>							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_AP.pdf">Applied Physics</a><br>							
+							<a hhref="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_CO.pdf">Computer Engg</a><br>							
+							<a href="../1Uploads/even/Course_Lists/Course_Lists_BE/Complete_EL.pdf">Electronics Engg</a><br>						
+					</ul>
+		</li>
+						
+		</ul>
+	  </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Student Lists
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+		 <li class="dropdown-submenu">
+				<a tabindex="-1" href="#">B.Tech</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a tabindex="-1" href="#">Branch-wise</a>
+								<ul class="dropdown-menu">
+								<li><a href="../../Student_Lists/btech/First Year.xlsx">First Year</a></li>
+								<li><a href="../../Student_Lists/btech/Architecture.xlsx">Architecture</a></li>
+								<li><a href="../../Student_Lists/btech/Civil Engg..xlsx">Civil</a></li>
+								<li><a href="../../Student_Lists/btech/Chemical Engg..xlsx">Chemical</a></li>
+								<li><a href="../../Student_Lists/btech/Computer Engg..xlsx">Computer</a></li>
+								<li><a href="../../Student_Lists/btech/Electrical Engg..xlsx">Electrical</a></li>
+								<li><a href="../../Student_Lists/btech/Electronics Engg..xlsx">Electronics</a></li>
+								<li><a href="../../Student_Lists/btech/Mechanical Engg..xlsx">Mechanical</a></li>
+								<li><a href="=../../Student_Lists/btech/Petrochemical Engg..xlsx">Petrochemical</a></li>
+								</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a href="#">Hall-wise</a>
+								<ul class="dropdown-menu">
+								<li><a href="../../Student_Lists/btech/BBF.xlsx">Bibi Fatima</a></li>
+								<li><a href="../../Student_Lists/btech/NR.xlsx">NRSC</a></li>
+								<li><a href="../../Student_Lists/btech/SN.xlsx">Sarojini Naidu</a></li>
+								<li><a href="../../Student_Lists/btech/SUL.xlsx">Sulaiman</a></li>
+								<li><a href="../../Student_Lists/btech/NT.xlsx">Nadeem Tarin</a></li>
+								</ul>
+						</li>
+						<li>
+							<a href="../../Student_Lists/btech/Complete.xlsx">Complete</a>
+						</li>
+					</ul>
+		</li>
+           <li class="dropdown-submenu">
+				<a href="#">B.E.</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a tabindex="-1" href="#">Branch-wise</a>
+								<ul class="dropdown-menu">
+								<li><a href="../../Student_Lists/be/Civil Engg..xlsx">Civil</a></li>
+								<li><a href="../../Student_Lists/be/Electrical Engg..xlsx">Electrical</a></li>
+								<li><a href="../../Student_Lists/be/Mechanical Engg.xlsx">Mechanical</a></li>
+								</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a href="#">Hall-wise</a>
+								<ul class="dropdown-menu">
+								<li><a href="../../Student_Lists/be/BBF.xlsx">Bibi Fatima</a></li>
+								<li><a href="../../Student_Lists/be/NRSC.xlsx">NRSC</a></li>
+								<li><a href="../../Student_Lists/be/SN.xlsx">Sarojini Naidu</a></li>
+								<li><a href="../../Student_Lists/be/SUL.xlsx">Sulaiman</a></li>
+								<li><a href="../../Student_Lists/be/NT.xlsx">Nadeem Tarin</a></li>
+								<li><a href="../../Student_Lists/be/RM.xlsx">R.M. Hall</a></li>
+								</ul>
+						</li>
+						<li>
+							<a href="../../Student_Lists/be/Complete.xlsx">Complete</a>
+						</li>
+					</ul>
+		</li>
+		<li class="dropdown-submenu">
+				<a tabindex="-1" href="#">M.Tech</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a tabindex="-1" href="#">Branch-wise</a>
+								<ul class="dropdown-menu">
+								<li><a href="../../Student_Lists/mtech/IN.xlsx">Nanotechnology</a></li>
+								<li><a href="../../Student_Lists/mtech/CE.xlsx">Civil Engineering</a></li>
+								<li><a href="../../Student_Lists/mtech/EE.xlsx">Electrical Engineering</a></li>
+							
+							
+								<li><a href="../../Student_Lists/mtech/KE.xlsx">Chemical Engineering</a></li>
+								<li><a href="../../Student_Lists/mtech/LE.xlsx">Electronics Engineering</a></li>
+								
+								<li><a href="../../Student_Lists/mtech/ME.xlsx">Mechanical Engineering</a></li>
+								
+								<li><a href="../../Student_Lists/mtech/PE.xlsx">Computer(Egineering</a></li>
+								<li><a href="=../../Student_Lists/mtech/PK.xlsx">Petrochemical Engineering</a></li>
+								</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a href="#">Hall-wise</a>
+								<ul class="dropdown-menu">
+								<li><a href="../../Student_Lists/btech/BBF.xlsx">Bibi Fatima</a></li>
+								<li><a href="../../Student_Lists/btech/NR.xlsx">NRSC</a></li>
+								<li><a href="../../Student_Lists/btech/SN.xlsx">Sarojini Naidu</a></li>
+								<li><a href="../../Student_Lists/btech/SUL.xlsx">Sulaiman</a></li>
+								<li><a href="../../Student_Lists/btech/NT.xlsx">Nadeem Tarin</a></li>
+								</ul>
+						</li>
+						<li>
+							<a href="../../Student_Lists/mtech/Complete.xlsx">Complete</a>
+						</li>
+					</ul>
+		</li>
+        </ul>
+      </li>
+	  <li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Course Structure
+		<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<li><a href="crs_struct.php?prog=btech">B.Tech</a></li>
+			<li><a href="crs_struct.php?prog=be">B.E.</a></li>
+			<li><a href="crs_struct.php?prog=mtech">M.Tech.</a></li>
+			<li><a href="../course_structure/Sylabi_I_Yr.pdf">Syllabi First Year B.Tech. Courses</a></li>
+			
+		</ul>
+	  </li>
+	  
+	 
+      
+	  
+	  <li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Ordinances
+		<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<li><a href="../1Uploads/Ordinances/btech_11_16.pdf">B.Tech Ordinance_Effective From 2011-12</a></li>
+			<li><a href="../1Uploads/Ordinances/btech_17_22.pdf">B.Tech Ordinance_Effective From 2017-18 </a></li>
+			<li><a href="../1Uploads/Ordinances/btech_23_99.pdf">B.Tech Ordinance_Effective From 2023-24 </a></li>
+			<li><a href="../1Uploads/Ordinances/barch_11_16.pdf">B.Arch.Ordinance_Effective From 2011-12</a></li>
+			<li><a href="../1Uploads/Ordinances/barch_17_99">B.Arch.Ordinance_Effective From 2017-18</a></li>
+			<li><a href="../1Uploads/Ordinances/mtech_11_18.pdf">M.Tech Ordinance_Effective From 2011-12</a></li>
+			<li><a href="../1Uploads/Ordinances/mtech_19_99.pdf">M.Tech Ordinance_Effective From 2019-20</a></li>
+			<li><a href="../1Uploads/Ordinances/march_18_99.pdf">M.Arch Ordinance_Effective From 2018-19</a></li>
+			
+		</ul>
+	  </li>
+
+	 <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">B.Tech Time Table<span class="caret"></span></a>
+	  <ul class="dropdown-menu">
+			<li><a href="../slot_system/General Time-Table.pdf">General Time Table</a></li>
+			<li><a href="../slot_system/Time_Table_First_Semester.pdf">B.Tech. First Semester Time Table</a></li>
+			<li><a href="../slot_system/Time_Table_Second_Semester.pdf">B.Tech. Second Semester Time Table</a></li>
+		</ul>
+		</ul>
+	  </li>-->
+	  	   <!--li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+		<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<li><a href="eform.php">Graduating Exam Form</a></li>
+			<li><a href="../Reg_Form_MARCH.pdf">M.Arch. Course Registration Form</a></li>
+			<li><a href="../Reg_Form_BTECH.pdf">B.Tech./B.Arch. Course Registration Form</a></li>
+			<li><a href="../Reg_Form_BE.pdf">B.E. Course Registration Form</a></li>
+			<li><a href="../transcript.doc">Interim Transcript</a></li>
+			<li><a href="../Dissertation_Form.pdf">M.Tech. Diss. Submission Form </a></li>
+			
+			
+			
+	  </li-->
+	     </ul>
+   </ul>
+   </div>
+  </div>
+</nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Student Profile</h4>
+		
+      </div>
+      <div class="modal-body" id="mbody">
+
+<div class="bg-info">In case you've already created your profile, kindly <strong>Log In</strong></br>
+Students who have not yet created their profile, kindly <strong>Sign Up</strong></div>
+
+
+  <ul class="nav nav-tabs">
+     <li class="active"><a data-toggle="tab" href="#menu1" title="Click here to create your profile">Sign Up</a></li>
+    <li><a data-toggle="tab" href="#home" title="Click here if you've created your profile">Log In</a></li>
+ 
+
+  </ul>
+<br>
+  <div class="tab-content">
+    
+    <div id="menu1" class="tab-pane fade in active">
+		<form action="form.php" method="POST">
+		  <div class="form-group">
+			<label for="facno">Faculty Number</label>
+			<input type="text" class="form-control" id="facno" name="FN" placeholder="Faculty Number ...">
+		  </div>
+		  <div class="form-group">
+			<label for="enroll">Enrollment No.</label>
+			<input type="text" class="form-control" id="enroll" name="EN" placeholder="Enrollment No ...">
+		  </div>
+		  <button type="submit" class="btn btn-default" name="SIGNUP">Submit</button>
+		</form>
+    </div>    
+	<div id="home" class="tab-pane fade ">
+		<form action="slogin.php" method="POST">
+		  <div class="form-group">
+			<label for="facno">Faculty Number</label>
+			<input type="text" class="form-control" id="facno" name="fac" placeholder="Faculty Number ...">
+		  </div>
+		  <div class="form-group">
+			<label for="enroll">Password</label>
+			<input type="password" class="form-control" id="enroll" name="pass" placeholder="Password ...">
+		  </div>
+		  <button type="submit" class="btn btn-default" name="LOGIN">Submit</button>
+		</form>
+    </div>
+	</div>
+    <button class="btn btn-danger" style="float:right; margin-top:-30px;" onclick="req_fnc();">Request Password</button>
+  </div>
+  
+		<script>
+		
+		function req_fnc(){
+			$("#mbody").load("getpass.php");
+			$("#myModalLabel").append(" Request Password!");
+		}
+		</script>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg" style="text-align:center;">
+<div class="row col-md-8 col-md-offset-2">
+<h2 style="text-align:center;">Result: BTECH Even Semester, 2022-23</h2>
+	<!--<h5><b>
+		Note: The result shown is of Odd semester for First Year students and Even Semester for Second Yr to Final Yr Students. <br><br>Un.Crt. in result stands for uncleared credits. Inside the bracket numbers separated by ","  Indicates total credis of uncleared courses of I, II and III year. e.g. Un.Crt.(2,3,12) means total credits of uncleared courses of I, II and III as 2, 3 and 12 respectively. 
+	</b>
+	</h5>-->
+	<!--<h5><b>
+		Note: Un.Crt. in result stands for uncleared credits. Inside the bracket numbers separated by ","  Indicates total credis of uncleared courses of I, II and III year. e.g. Un.Crt.(2,3,12) means total credits of uncleared courses of I, II and III as 2, 3 and 12 respectively. 
+	</h5>-->
+					<div class="table-responsive">
+				<table class="table table-hover" >
+                   <tr>
+                   <th>Course</th><th>Sessional Marks</th><th>Exam Marks</th><th>Total</th><th>Grace Marks</th><th>Grades</th><th>Grade Range</th>
+                   </tr>
+                           
+                            
+							
+														<tr>
+						<td>COC3110</td><td>24</td><td>43</td><td>67</td><td>0</td><td>B+</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60, C:41-50, D:35-40</td>
+						</tr>
+						  						<tr>
+						<td>COC3120</td><td>19</td><td>31</td><td>50</td><td>1</td><td>B</td><td>A+:75-100, A:66-74, B+:60-65, B:51-59, C:41-50, D:35-40</td>
+						</tr>
+						  						<tr>
+						<td>COC3130</td><td>29</td><td>48</td><td>77</td><td>0</td><td>A</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60, C:41-50, D:35-40</td>
+						</tr>
+						  						<tr>
+						<td>COC3150</td><td>35</td><td>50</td><td>85</td><td>0</td><td>A+</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60, C:41-50, D:35-40</td>
+						</tr>
+						  						<tr>
+						<td>COC3800</td><td>33</td><td>30</td><td>63</td><td>0</td><td>B+</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60</td>
+						</tr>
+						  						<tr>
+						<td>COC3940</td><td>46</td><td>31</td><td>77</td><td>0</td><td>A</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60</td>
+						</tr>
+						  						<tr>
+						<td>COC3960</td><td>46</td><td>32</td><td>78</td><td>0</td><td>A</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60</td>
+						</tr>
+						  						<tr>
+						<td>EZH3020</td><td>31</td><td>33</td><td>64</td><td>0</td><td>B+</td><td>A+:81-100, A:71-80, B+:61-70, B:51-60, C:41-50, D:35-40</td>
+						</tr>
+						  					</table>
+					<table style="width:100%;text-align:center;">
+					<tr>
+					<th style="text-align:center;">Faculty No.</th><th style="text-align:center;">Enrol No.</th><th style="text-align:center;">Student Name</th><th style="text-align:center;">EC</th><th style="text-align:center;">SPI</th><th style="text-align:center;">CPI</th><th style="text-align:center;">Result</th>
+					</tr>
+					<tr>
+					<td>20COB348</td><td>GL9642</td><td>MOHAMMAD ASHRAF</td><td>152</td><td>8.48</td><td>8.714</td><td>Pass</td>
+					</tr>
+					</table>
+										<br>
+									
+				</div>
+				<center><a href="cpiconvert.php" target="_blank">Students admitted before year 2017 may click here to check theie equivalent percentage...</a></center>
+				
+				</div>
+				</div>
+				
+				</body>
+				
+</html>
+				
