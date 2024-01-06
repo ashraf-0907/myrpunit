@@ -12,21 +12,21 @@ function Form() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setIsButtonDisabled(true); // Disable the button on click
+    setIsButtonDisabled(true);
     try {
       const response = await axios.post("http://localhost:8080/", {
         fac: faculty,
         en: enroll,
       });
       console.log("Data sent successfully:", response.data);
-      // Reset form fields after successful submission
-      setEnroll("");
-      setFaculty("");
+      setEnroll(""); // Resetting state after successful form submission
+      setFaculty(""); // Resetting state after successful form submission
     } catch (error) {
       console.error("Error sending data:", error);
     } finally {
-      setIsButtonDisabled(false); // Enable the button after operation completes
+      setIsButtonDisabled(false);
     }
+  
   };
 
   const resetForm = () => {
@@ -49,6 +49,7 @@ function Form() {
                 type="text"
                 placeholder="Faculty Number"
                 value={faculty}
+                name = "fac"
                 onChange={(e) => setFaculty(e.target.value)}
               />
             </div>
@@ -58,6 +59,7 @@ function Form() {
                 type="text"
                 placeholder="Enrollment Number"
                 value={enroll}
+                name ="en"
                 onChange={(e) => setEnroll(e.target.value)}
               />
             </div>

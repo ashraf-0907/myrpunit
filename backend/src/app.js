@@ -11,5 +11,10 @@ app.use(express.urlencoded(
     {extended: true,limit: "1000kb" }
 ));
 
+//Router import 
+import studentRouter from "./routes/Student.router.js"
+
+app.use("/",studentRouter);
+app.use("/resultFetched",studentRouter);
 
 export default app;

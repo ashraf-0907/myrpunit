@@ -4,9 +4,9 @@ import { JSDOM } from 'jsdom';
 import { Student } from '../models/student.model.js';
 // import { Mark } from '../models/marks.model.js'
 
-const reqHTML = async (en, fac) => {
+const reqHTML = async (en,fac) => {
     const url = "https://ctengg.amu.ac.in/web/table_result010.php";
-
+    // const {fac,en}= req.body
     const body = new URLSearchParams();
     body.set('fac', fac);
     body.set('en', en);

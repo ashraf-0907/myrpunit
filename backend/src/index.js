@@ -8,6 +8,7 @@ import app from "./app.js";
 
 const port = process.env.PORT || 5000;
 
+
 app.post("/", async (req, res) => {
     const { en, fac } = req.body;
     console.log(en, fac);
@@ -16,6 +17,7 @@ app.post("/", async (req, res) => {
     reqHTML(en, fac);
     res.send("hello world");
 });
+
 
 dbConnect().then(()=>{
     app.listen(port,()=>{
@@ -31,10 +33,3 @@ import {reqHTML} from "./controllers/student.controller.js";
 var enroll;
 var faculty;
 
-
-// const en = `GL9637`
-// const faculty = `20COB330`
-
-// const response  = reqHTML(enroll,faculty);
-
-// console.log(response);
