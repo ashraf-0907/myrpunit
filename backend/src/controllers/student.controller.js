@@ -37,11 +37,11 @@ const reqHTML = async (en,fac) => {
             let tbody = tableResponsive.children[0]?.children[0];
             let infoRow = tableResponsive.children[1]?.children[0]?.children[1];
 
-            if (tbody) {
-                console.log(tbody.innerHTML);
-            } else {
-                console.error('Tbody not found.');
-            }
+            // if (tbody) {
+            //     console.log(tbody.innerHTML);
+            // } else {
+            //     console.error('Tbody not found.');
+            // }
 
             if (infoRow) {
                // console.log(infoRow.innerHTML);

@@ -1,8 +1,8 @@
 // App.js
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CompareResult from './compareResult.jsx';
-import Form from './form.jsx';
-import './App.css'; // Import your CSS file for styling
+import CompareResult from './components/compareResult.jsx';
+import Form from './components/form.jsx';
+import './App.css'; // Import CSS file for styling
 
 function App() {
   return (
