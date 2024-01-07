@@ -1,0 +1,17 @@
+/* OptionForm.css */
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.radio-input {
+    margin-right: 5px;
+}
+
