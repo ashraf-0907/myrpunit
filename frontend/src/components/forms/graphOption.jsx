@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import './OptionForm.css'; // Import your CSS file
+import { useState } from "react";
 
-function OptionForm({ setSelectedOption }) {
-    const [selected, setSelected] = useState('t');
+function GraphForm({setSelectedGraph}){
+    const [selected, setSelected] = useState('r');
 
     const handleOptionChange = (event) => {
         const { value } = event.target;
         setSelected(value);
-        setSelectedOption(value);
+        setSelectedGraph(value);
     };
+
+    console.log("worked");
 
     return (
         <div className="containers">
@@ -16,40 +17,40 @@ function OptionForm({ setSelectedOption }) {
             <label className="radio-label">
                 <input
                     type="radio"
-                    value="s"
-                    name="options"
+                    value="l"
+                    name="g1"
                     className="radio-input"
-                    checked={selected === 's'}
+                    checked={selected === 'l'}
                     onChange={handleOptionChange}
                 />
-                Sessional
+                Line Graph
             </label>
             <label className="radio-label">
                 <input
                     type="radio"
-                    value="e"
-                    name="options"
+                    value="b"
+                    name="g2"
                     className="radio-input"
-                    checked={selected === 'e'}
+                    checked={selected === 'b'}
                     onChange={handleOptionChange}
                 />
-                Exam marks
+                Bar Graph
             </label>
             <label className="radio-label">
                 <input
                     type="radio"
-                    value="t"
-                    name="options"
-                    defaultChecked={true}
+                    value="r"
+                    name="g3"
                     className="radio-input"
-                    checked={selected === 't'}
+                    checked={selected === 'r'}
                     onChange={handleOptionChange}
                 />
-                Total Marks
+                Radar Chart
             </label>
         </div>
         </div>
     );
 }
 
-export default OptionForm;
+
+export default GraphForm

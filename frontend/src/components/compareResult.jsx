@@ -1,26 +1,26 @@
-import { useState, useEffect } from "react";
-import "./form.css";
+
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import LineCharts from "./Graphs/lineGraph.component.jsx";
-import OptionForm from "./OptionForm.component.jsx";
+import BarCharts from "./Graphs/barChart.jsx";
+import RadarCharts from "./Graphs/pieChart.jsx";
+import OptionForm from "./forms/OptionForm.component.jsx";
+import './compareResult.css';
+import GraphForm from "./forms/graphOption.jsx";
 
 function CompareResult() {
   const [selectedOption, setSelectedOption] = useState("");
+  const [selectGraph, setSelectedGraph] = useState("");
   const [params, setParams] = useState({ result1: null, result2: null });
   const [dataLoaded, setDataLoaded] = useState(false);
   const [loadingMessage, setLoadingMessage] = useState("Loading data...");
-//   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simulate a delay of 2 seconds before fetching data
         setLoadingMessage("Loading data... (Please wait)");
-        setTimeout(async () => {
-          const response = await axios.get("http://localhost:8080/compareResult");
-          setParams(response.data);
-        }, 2000);
+        const response = await axios.get("http://localhost:8080/compareResult");
+        setParams(response.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -28,6 +28,8 @@ function CompareResult() {
 
     fetchData();
   }, []);
+
+  console.log(params);
 
   useEffect(() => {
     if (params.result1 && params.result2) {
@@ -39,29 +41,23 @@ function CompareResult() {
     setSelectedOption(option);
   };
 
+  const handleOptionGraph = (g) => {
+    setSelectedGraph(g);
+  };
+
   const renderGraphs = () => {
     return (
       <div>
-        <h1 style={{ width: "100%", color: "#fff" }}>Result Comparison</h1>
-        <div style={{ width: "150vh" }}>
-          <LineCharts param={params} option={selectedOption} />
+        <h1>Result Comparison</h1>
+        <div style={{ width: "130vh" }}>
+        {
+          selectGraph ==='l'?<LineCharts param={params} option={selectedOption} />:selectGraph ==='b'? <BarCharts param={params} option={selectedOption} />:<RadarCharts param={params} option={selectedOption} />
+        }
+          {/* <BarCharts param={params} option={selectedOption} /> */}
         </div>
-        <div
-          className="container"
-          style={{
-            paddingLeft: "20px",
-            marginTop: "10px",
-            alignItems: "center",
-            justifyContent: "space-between",
-            display: "flex",
-            flexDirection: "row",
-            paddingTop: "10px",
-            paddingBottom: "10px",
-            fontSize: "18px",
-            color: "#36454F",
-          }}
-        >
+        <div className="container1">
           <OptionForm setSelectedOption={handleOptionSelection} />
+          <GraphForm setSelectedGraph={handleOptionGraph} />
         </div>
       </div>
     );
@@ -79,3 +75,4 @@ function CompareResult() {
 }
 
 export default CompareResult;
+

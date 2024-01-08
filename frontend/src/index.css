@@ -8,9 +8,9 @@
   background-color: #242424; */
 
   height: 100vh;
-  background: linear-gradient(to bottom, #2A00B7, #42006C);
+  background:"#FAEF5D";
 
-
+  /* linear-gradient(to bottom, #FFD700,#FFFFE0); */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

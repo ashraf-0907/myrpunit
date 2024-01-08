@@ -3,7 +3,7 @@
     flex-direction: column;
     margin:auto;
     /* margin-top: 200px; */
-    background:#fff;
+    background:#FAEF5D;
     border-radius: 10px;
     padding-bottom: 40px;
 }
@@ -69,11 +69,12 @@
 }
 
 .submit-container{
-    /* display: flex; */
+    display: flex;
     align-items: center;
+    padding-left: 10px;
     /* gap: 30px; */
     /* margin: 60px auto; */
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
     /* padding-right: 1rem; */
 }
 
@@ -102,4 +103,16 @@
 span{
     color:#3c009d;
     cursor: pointer;
+}
+
+.chor{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

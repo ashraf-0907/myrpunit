@@ -4,6 +4,7 @@ function LineCharts(params) {
     const { param, option } = params;
     const student1Marks = param.result1.marks;
     const student2Marks = param.result2.marks;
+    console.log(student1Marks,student2Marks);
     const mark = option === 's' ? 'sessional' : option === 'e' ? 'final' : 'total';
 
     return (

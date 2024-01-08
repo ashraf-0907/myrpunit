@@ -1,29 +1,23 @@
 import { Student } from "../models/student.model.js";
 
 const resultFetched = async (array) => {
-    if (array.length <= 1) {
-        return null; // Return null or handle appropriately if array length is less than 2
-    }
     
-    const firstStudent = array[0];
-    const secondStudent = array[1];
 
+    console.log(array,"vdfasdf");
+    const stud = array[0];
+    // console.log(stud);
     array.pop();
-    array.pop();
-
-    // console.log(firstStudent,"hihk");
-    // console.log(secondStudent);
 
     try {
-        const result1 = await Student.findOne({ faculty_no: firstStudent.fac }).select(
+        const result1 = await Student.findOne({ faculty_no: stud.fac1 }).select(
             "-faculty_no -_id -createdAt -updatedAt"
         );
-        const result2 = await Student.findOne({ faculty_no: secondStudent.fac }).select(
+        const result2 = await Student.findOne({ faculty_no: stud.fac2 }).select(
             "-faculty_no -_id -createdAt -updatedAt"
         );
 
-        // console.log(result1.marks);
-        // console.log(result2.marks);
+        console.log("hehe",result1.marks);
+        console.log("he0000003he",result2.marks);
 
         if (result1 && result2 && result1.marks && result2.marks) {
             return { result1: result1, result2: result2 };

@@ -9,14 +9,14 @@ import app from "./app.js";
 const port = process.env.PORT || 5000;
 
 
-app.post("/", async (req, res) => {
-    const { en, fac } = req.body;
-    console.log(en, fac);
-    enroll = en; // Semicolon added here to terminate the statement
-    faculty = fac; // Semicolon added here to terminate the statement
-    reqHTML(en, fac);
-    res.send("hello world");
-});
+// app.post("/", async (req, res) => {
+//     const { en, fac } = req.body;
+//     console.log(en, fac);
+//     enroll = en; // Semicolon added here to terminate the statement
+//     faculty = fac; // Semicolon added here to terminate the statement
+//     reqHTML(en, fac);
+//     res.send("hello world");
+// });
 
 
 dbConnect().then(()=>{
@@ -28,8 +28,4 @@ dbConnect().then(()=>{
 })
 
 // Running the controller 
-
-import {reqHTML} from "./controllers/student.controller.js";
-var enroll;
-var faculty;
 
